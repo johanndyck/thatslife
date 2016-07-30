@@ -1,6 +1,43 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-weight: 400;
+	line-height: 1em;
 }
+
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	display: inline-block;
+	clear: both;
+	border-bottom: 2px solid $orange;
+	padding:0 2.5em .5em 0;
+	letter-spacing: 0.07em;
+	margin: 0 0 1em;
+}
+h3 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+h4 {
+	font-size: 1.4em;
+	color: orange;
+	font-weight: 700;
+}
+h5 {
+	font-size: 1.2em;
+	color: darkgray;
+	font-weight: 700;
+}
+h6 {
+	font-size: 1em;
+	color: darkgray;
+	text-transform: uppercase;
+}
+
 
 .site-branding {
 	text-align: center;
@@ -11,8 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Great Vibes', Helvetica, sans-serif;
 	font-size:4em;
 	line-height:1em;
-	margin:0;
-	padding:0;
+	margin:1.5rem 0 0;
+	padding:3rem 0 0;
 	font-weight:400;
 }
 
@@ -24,11 +61,14 @@ h1, h2, h3, h4, h5, h6 {
 .site-description {
 	text-transform: uppercase;
 	font-family: Roboto, sans-serif;
-	margin:0;
+	margin:0 0 2.5rem;
 	padding: 0;
+  letter-spacing: .1em;
+	color: $orange;
 }
 
 .site-description::before, .site-description::after {
-	content: "  ———  ";
+	content: "  ————————  ";
 	letter-spacing: -0.2em;
+	color: lightgray;
 }
