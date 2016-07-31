@@ -1,8 +1,29 @@
 //Mobile First
+
+.menu-toggle {
+	box-shadow: none;
+	color: orange;
+	background-color: transparent;
+	border-width: 0;
+	border-radius: 0;
+	display: block;
+	text-decoration: none;
+	background: #ffffff;
+	padding:.75rem 1rem;
+	font-size: .85rem;
+	border-bottom: 1px solid darkgray;
+	font-weight: 700;
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
 .main-navigation {
 	text-transform: uppercase;
 	
-	a, li.current_page_item li a, li.current_page_parent li a  {
+	a,
+	li.current_page_item li a,
+	li.current_page_parent li a  {
 		color: darkslategrey;
 	}
 	
@@ -10,7 +31,10 @@
 		color: darkgray;
 	}
 	
-	a:hover, li.current_page_parent li.current_page_item a, li.current_page_parent li a:hover, li.current_page_parent a:hover {
+	a:hover,
+	li.current_page_parent li.current_page_item a, 
+	li.current_page_parent li a:hover, 
+	li.current_page_parent a:hover {
 		color: $orange;
 	}
 	
@@ -19,7 +43,6 @@
 		margin: 0;
 		list-style: none;
 		display: none;
-
 		
 		ul {
 			padding-left: 2em;
@@ -38,26 +61,18 @@
 				text-decoration: none;
 				background: #ffffff;
 				padding:.75rem 1rem;
-				font-size: .85rem;
+				font-size: .7rem;
 				border-bottom: 1px solid darkgray;
 				font-weight: 700;
 			}	
 			
-		} // li
-		
+		} // li		
 	} // ul
-	
-
-	
 } // .main-navigation
-
-
-
 
  .toggled ul {
 	display: block;
 }
-
 
 @media screen and (min-width: 37em) {
 	
@@ -69,7 +84,6 @@
 		border-bottom: 1px solid lightgray;
 		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.05);
 
-		
 		ul {
 			display: block;
 			
@@ -84,21 +98,17 @@
 					left: -999em;
 					position: absolute;
 					z-index: 99999;
-					display: block;
-					
-					
+					display: block;				
 				}
 				
 				li:hover > ul,
 				li.focus > ul {
-					left: 13em;
+					left: 100%;
 					top:0;
 				}
 				
 				li {
-					display: inline-block;
 				
-						
 					a {
 						display: block;
 						width: 15em;
@@ -109,29 +119,23 @@
 			li {
 				position: relative;
 				text-align: left;
+				display: inline-block;
 				
 				a {
 					display: inline-block;
 					border-bottom-width: 0;
 					font-weight: 400;
 					line-height: 2em;
-
 				}
 			}
 			
 			li:hover > ul,
 			li.focus > ul {
 				left: auto;
-		}
-			
+			}
 		}
 	}
 }
-
-
-
-
-
 
 .comment-navigation,
 .posts-navigation,
@@ -153,3 +157,4 @@
 		width: 50%;
 	}
 }
+

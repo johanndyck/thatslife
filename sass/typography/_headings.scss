@@ -4,19 +4,40 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1em;
 }
 
-h1 {
-	font-size: 2.5em;
-}
+main h1,
 h2 {
-	font-size: 1.2em;
+	font-size: 1em;
 	text-transform: uppercase;
-	display: inline-block;
 	clear: both;
-	border-bottom: 2px solid $orange;
+	border-bottom: 1px solid #ddd;
 	padding:0 2.5em .5em 0;
 	letter-spacing: 0.07em;
 	margin: 0 0 1em;
+	font-weight: 700;
+	position: relative;
 }
+
+main h1::after,
+h2::after {
+	content: " ";
+	display: block;
+	height: 1rem;
+	width: 5rem;
+	border-bottom: 2px solid $orange;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 9999
+}
+
+main h1 a,
+main h1 a:visited,
+h2 a,
+h2 a:visited {
+	color: $orange;
+	text-decoration: none;
+}
+
 h3 {
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -68,7 +89,7 @@ h6 {
 }
 
 .site-description::before, .site-description::after {
-	content: "  ————————  ";
+	content: "  ——  ";
 	letter-spacing: -0.2em;
 	color: lightgray;
 }

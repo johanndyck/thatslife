@@ -14,7 +14,9 @@
   "license": "SEE LICENSE IN README.md",
   "homepage": "https://bitbucket.org/johanndyck/jdlife#readme",
   "devDependencies": {
+    "auto-prefixer": "^0.4.2",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-compass": "^2.1.0",
     "gulp-util": "^3.0.7"
   }
