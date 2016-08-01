@@ -9,3 +9,30 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+
+#content {
+	padding:1rem;
+}
+
+@media screen and (min-width: 50rem) {
+	#content {
+		max-width:50rem;
+		margin: 1em auto;
+	}
+}
+
+.post,
+aside section,
+article.page
+{
+	background: #ffffff;
+	padding:2rem;
+		box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.05);
+}
+
+div aside .widget_search {
+	background: none;
+	padding:0rem;
+		box-shadow: none;
+}
