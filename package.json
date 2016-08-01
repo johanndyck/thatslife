@@ -15,9 +15,13 @@
   "homepage": "https://bitbucket.org/johanndyck/jdlife#readme",
   "devDependencies": {
     "auto-prefixer": "^0.4.2",
+    "autoprefixer": "^6.3.7",
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-compass": "^2.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7"
   }
 }

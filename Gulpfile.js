@@ -1,22 +1,32 @@
 "use strict";
 
-var gulp = require('gulp');
-var gutil = require('gulp-util');
-var compass = require('gulp-compass');
-var autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp'),
+		gutil = require('gulp-util'),
+		del = require('del'),
+		postcss = require('gulp-postcss'),
+		autoprefixer = require('autoprefixer'),
+		sass = require('gulp-sass'),
 
-gulp.task('compass', function() {
-	gulp.src('./sass/style.scss')
-	.pipe(compass({
-		config_file: 'config.rb'
-	}))
-		.on('error', gutil.log)
-	.pipe(autoprefixer({browsers: ['last 2 versions', '> 1%']}))
-	.pipe(gulp.dest('./'));
+		cssSources = './sass/style.scss',
+	
+		cssDest = './',
+		
+		watchList = [
+			'./sass/**/*.scss'
+		];
+
+gulp.task('css', function() {
+	gulp.src(cssSources)
+	
+	.pipe(sass().on('error', sass.logError))
+	.pipe(postcss([
+		autoprefixer({browsers: ['last 3 versions', '> 1%']})
+	]))
+	.pipe(gulp.dest(cssDest));
 });
 
 gulp.task('watch', function() {
-	gulp.watch('./sass/**/*.scss', ['compass']);
+	gulp.watch(watchList, ['css']);
 });
 
-gulp.task('default', ['compass', 'watch']);
+gulp.task('default', ['css', 'watch']);
