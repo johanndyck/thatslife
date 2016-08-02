@@ -252,7 +252,7 @@ h2::after {
   display: block;
   height: 1rem;
   width: 5rem;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid green;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -262,7 +262,7 @@ main h1 a,
 main h1 a:visited,
 h2 a,
 h2 a:visited {
-  color: orange;
+  color: green;
   text-decoration: none; }
 
 h3 {
@@ -306,7 +306,7 @@ h6 {
   margin: 0 0 2.5rem;
   padding: 0;
   letter-spacing: .1em;
-  color: orange; }
+  color: green; }
 
 .site-description::before, .site-description::after {
   content: "  ——  ";
@@ -420,7 +420,7 @@ input[type="submit"] {
   border: 0;
   border-color: #ccc #ccc #bbb;
   border-radius: 0;
-  background: orange;
+  background: green;
   box-shadow: none;
   color: #fff;
   line-height: 1;
@@ -532,7 +532,7 @@ a {
   .main-navigation li.current_page_parent li.current_page_item a,
   .main-navigation li.current_page_parent li a:hover,
   .main-navigation li.current_page_parent a:hover {
-    color: orange; }
+    color: green; }
   .main-navigation ul {
     padding: 0;
     margin: 0;
