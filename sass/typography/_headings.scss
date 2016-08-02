@@ -88,8 +88,3 @@ h6 {
 	color: $orange;
 }
 
-.site-description::before, .site-description::after {
-	content: "  ——  ";
-	letter-spacing: -0.2em;
-	color: lightgray;
-}

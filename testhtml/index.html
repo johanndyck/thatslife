@@ -1,0 +1,89 @@
+
+<style>
+	body {
+		margin: 0;
+	}
+	.screen-reader-text {
+		display:none;
+	}
+
+	nav {
+				text-align: center;
+
+	}
+	
+	nav ul {
+		display: inline-block;
+		list-style-type: none;
+		padding:0;
+		margin:0;
+		background: #aaa;
+				font-size: 0;
+	}
+	
+	nav ul li {
+		display: inline;
+		padding: 0;
+		margin:0;
+		background: #bbb;
+		font-size: 1rem;
+
+	}
+	
+	nav ul li a {
+		display:inline-block;
+		padding:.5em;
+		background: #eee;
+		margin: 0;
+	}
+	
+	.n1 {float: left;}
+	.n2 {}
+	.n3 {float: right;}
+	
+	nav form {
+		background: #ccc;
+		text-align: left;
+	}
+	
+	
+</style>
+
+
+<nav>
+	<ul class="n1" >
+		<li><a href="#">Q</a></li>
+		<li><a href="#">H</a></li>
+	</ul>
+	<ul class="n3">
+		<li><a href="#">f</a></li>
+		<li><a href="#">t</a></li>
+		<li><a href="#">G+</a></li>
+		<li><a href="#">pin</a></li>
+	</ul>
+	<ul class="n2">
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+		<li><a href="#">link</a></li>
+	</ul>
+	
+
+	<form role="search" method="get" class="search-form" action="http://theinterfacestudio.com/thatslife/">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input type="search" class="search-field" placeholder="search" value="" name="s">
+		</label>
+		<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+	</form>
+	
+</nav>
