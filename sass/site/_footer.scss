@@ -1,0 +1,18 @@
+#pre-site-footer {
+	border-top:2px solid $main_color;
+	padding: 2em 0 2em;
+}
+
+.site-footer::after {
+	content: " ";
+	height: 0;
+	width: 0;
+	margin: 0 0 2rem;
+	
+}
+
+#footer-widgets .widget {
+	float:left;
+	width:33%;
+	padding:0 15px 0;
+}

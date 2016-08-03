@@ -12,7 +12,8 @@ var gulp = require('gulp'),
 		cssDest = './',
 		
 		watchList = [
-			'./sass/**/*.scss'
+			'./sass/**/*.scss',
+			'./sass/**/**/*.scss'
 		];
 
 gulp.task('css', function() {

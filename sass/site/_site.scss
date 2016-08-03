@@ -10,8 +10,15 @@
 --------------------------------------------------------------*/
 @import "primary/comments";
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "footer";
 
-#content {
+
+
+#content,
+.site-footer {
 	padding:1rem;
 }
 
@@ -31,7 +38,8 @@ div aside .widget_search {
 }
 
 @media screen and (min-width: 600px) {
-	#content {
+	#content,
+	.site-footer  {
 		padding: 0;
 		margin: 0 auto;
 		max-width: 600px;
@@ -40,7 +48,8 @@ div aside .widget_search {
 
 
 @media screen and (min-width: 900px) {
-	#content {
+	#content,
+	.site-footer  {
 		max-width: 900px;
 	}
 	
@@ -57,7 +66,8 @@ div aside .widget_search {
 
 
 @media screen and (min-width: 1200px) {
-	#content {
+	#content,
+	.site-footer  {
 		max-width: 1170px;
 	}
 	

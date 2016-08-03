@@ -909,7 +909,26 @@ a {
 .bypostauthor {
   display: block; }
 
-#content {
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#pre-site-footer {
+  border-top: 2px solid green;
+  padding: 2em 0 2em; }
+
+.site-footer::after {
+  content: " ";
+  height: 0;
+  width: 0;
+  margin: 0 0 2rem; }
+
+#footer-widgets .widget {
+  float: left;
+  width: 33%;
+  padding: 0 15px 0; }
+
+#content,
+.site-footer {
   padding: 1rem; }
 
 .post,
@@ -925,13 +944,15 @@ div aside .widget_search {
   box-shadow: none; }
 
 @media screen and (min-width: 600px) {
-  #content {
+  #content,
+  .site-footer {
     padding: 0;
     margin: 0 auto;
     max-width: 600px; } }
 
 @media screen and (min-width: 900px) {
-  #content {
+  #content,
+  .site-footer {
     max-width: 900px; }
   #primary {
     width: 590px;
@@ -941,7 +962,8 @@ div aside .widget_search {
     float: right; } }
 
 @media screen and (min-width: 1200px) {
-  #content {
+  #content,
+  .site-footer {
     max-width: 1170px; }
   #primary {
     width: 860px; } }
