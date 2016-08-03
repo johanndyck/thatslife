@@ -27,17 +27,17 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'jdlife' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-	<!--
-		<a href="#" id="search_button">Search</a>
+	
+		<a href="#" id="search_button"><i class="icon-search">Search</i></a>
 		<form action="#" method="get" id="search_form">
 			<label for="s">
 				<input type="search" name="s" id="s" placeholder="search" maxlength="200" />
 			</label>
-			<button type="submit" title="Search this website now">Go</button>
+			<button type="submit" title="Search this website now"><i class="icon-search"></i></button>
 		</form>
-	-->
+	
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'jdlife' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="icon-menu"></i><?php esc_html_e( 'Menu', 'jdlife' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 		<!--
