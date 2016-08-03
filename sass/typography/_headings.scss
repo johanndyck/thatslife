@@ -8,24 +8,43 @@ main h1,
 h2 {
 	font-size: 1em;
 	text-transform: uppercase;
-	clear: both;
-	border-bottom: 1px solid #ddd;
 	padding:0 2.5em .5em 0;
 	letter-spacing: 0.07em;
 	margin: 0 0 1em;
 	font-weight: 700;
+}
+
+secondary h1,
+h2,
+main header {
+	border-bottom: 1px solid #ddd;
 	position: relative;
 }
 
-main h1::after,
-h2::after {
+main header h2 {
+	border-bottom-width: 0;
+}
+
+main header h2::after {
+	display: none;
+}
+
+.entry-meta a,
+.entry-meta a:visited {
+	color: $main_color;
+	text-decoration: none;
+}
+
+secondary h1::after,
+h2::after,
+main header::after {
 	content: " ";
 	display: block;
 	height: 1rem;
-	width: 5rem;
+	width: 10rem;
 	border-bottom: 2px solid $orange;
 	position: absolute;
-	bottom: -2px;
+	bottom: -1px;
 	left: 0;
 	z-index: 9999
 }
@@ -45,7 +64,7 @@ h3 {
 }
 h4 {
 	font-size: 1.4em;
-	color: orange;
+	color: $main_color;
 	font-weight: 700;
 }
 h5 {
@@ -58,7 +77,6 @@ h6 {
 	color: darkgray;
 	text-transform: uppercase;
 }
-
 
 .site-branding {
 	text-align: center;
@@ -88,3 +106,16 @@ h6 {
 	color: $orange;
 }
 
+main header h1,
+main header h2 {
+	margin: 2em 0 0;
+}
+
+.entry-meta {
+	text-transform: uppercase;
+	font-size: 80%;
+	line-height: 2rem;
+	margin: 0 0 1.25rem;
+	letter-spacing: 0.03em;
+	word-spacing: 0.1em;
+}

@@ -15,13 +15,6 @@
 	padding:1rem;
 }
 
-@media screen and (min-width: 50rem) {
-	#content {
-		max-width:50rem;
-		margin: 1em auto;
-	}
-}
-
 .post,
 aside section,
 article.page
@@ -35,4 +28,41 @@ div aside .widget_search {
 	background: none;
 	padding:0rem;
 		box-shadow: none;
+}
+
+@media screen and (min-width: 600px) {
+	#content {
+		padding: 0;
+		margin: 0 auto;
+		max-width: 600px;
+	}
+}
+
+
+@media screen and (min-width: 900px) {
+	#content {
+		max-width: 900px;
+	}
+	
+	#primary {
+		width: 590px;
+		float: left;
+	}
+	#secondary {
+		width: 280px;
+		float: right;
+	}
+	
+}
+
+
+@media screen and (min-width: 1200px) {
+	#content {
+		max-width: 1170px;
+	}
+	
+	#primary {
+		width: 860px;
+	}
+	
 }

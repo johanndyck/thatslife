@@ -227,7 +227,8 @@ textarea {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: .02em; }
+  letter-spacing: .04em;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -238,23 +239,38 @@ main h1,
 h2 {
   font-size: 1em;
   text-transform: uppercase;
-  clear: both;
-  border-bottom: 1px solid #ddd;
   padding: 0 2.5em .5em 0;
   letter-spacing: 0.07em;
   margin: 0 0 1em;
-  font-weight: 700;
+  font-weight: 700; }
+
+secondary h1,
+h2,
+main header {
+  border-bottom: 1px solid #ddd;
   position: relative; }
 
-main h1::after,
-h2::after {
+main header h2 {
+  border-bottom-width: 0; }
+
+main header h2::after {
+  display: none; }
+
+.entry-meta a,
+.entry-meta a:visited {
+  color: green;
+  text-decoration: none; }
+
+secondary h1::after,
+h2::after,
+main header::after {
   content: " ";
   display: block;
   height: 1rem;
-  width: 5rem;
+  width: 10rem;
   border-bottom: 2px solid green;
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   left: 0;
   z-index: 9999; }
 
@@ -272,7 +288,7 @@ h3 {
 
 h4 {
   font-size: 1.4em;
-  color: orange;
+  color: green;
   font-weight: 700; }
 
 h5 {
@@ -308,6 +324,18 @@ h6 {
   letter-spacing: .1em;
   color: green; }
 
+main header h1,
+main header h2 {
+  margin: 2em 0 0; }
+
+.entry-meta {
+  text-transform: uppercase;
+  font-size: 80%;
+  line-height: 2rem;
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.03em;
+  word-spacing: 0.1em; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -315,7 +343,11 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5em 0 0;
+  padding-left: 1.5em;
+  border-left: 4px solid green;
+  font-size: 110%;
+  line-height: 1.5em; }
 
 address {
   margin: 0 0 1.5em; }
@@ -346,6 +378,10 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+main {
+  line-height: 1.6em;
+  color: #444; }
 
 @font-face {
   font-family: 'thats_life';
@@ -721,7 +757,7 @@ a {
         .main-navigation ul li a {
           display: inline-block;
           border-bottom-width: 0;
-          font-weight: 400;
+          font-weight: 700;
           line-height: 2em; }
       .main-navigation ul li:hover > ul,
       .main-navigation ul li.focus > ul {
@@ -876,11 +912,6 @@ a {
 #content {
   padding: 1rem; }
 
-@media screen and (min-width: 50rem) {
-  #content {
-    max-width: 50rem;
-    margin: 1em auto; } }
-
 .post,
 aside section,
 article.page {
@@ -892,6 +923,28 @@ div aside .widget_search {
   background: none;
   padding: 0rem;
   box-shadow: none; }
+
+@media screen and (min-width: 600px) {
+  #content {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px; } }
+
+@media screen and (min-width: 900px) {
+  #content {
+    max-width: 900px; }
+  #primary {
+    width: 590px;
+    float: left; }
+  #secondary {
+    width: 280px;
+    float: right; } }
+
+@media screen and (min-width: 1200px) {
+  #content {
+    max-width: 1170px; }
+  #primary {
+    width: 860px; } }
 
 /*--------------------------------------------------------------
 # Infinite scroll

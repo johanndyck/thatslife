@@ -7,7 +7,11 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0 1.5em 0 0;
+	padding-left: 1.5em;
+	border-left: 4px solid $main_color;
+	font-size: 110%;
+	line-height: 1.5em;
 }
 
 address {
@@ -42,4 +46,9 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+main {
+	line-height: 1.6em;
+	color:#444;
 }
