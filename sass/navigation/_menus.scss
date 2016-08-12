@@ -83,6 +83,8 @@
 		background-color: #ffffff;
 		border-bottom: 1px solid lightgray;
 		box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.05);
+		z-index: 99999;
+		position: relative;
 
 		ul {
 			display: block;
@@ -93,6 +95,7 @@
 				left: -999em;
 				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 				display: block;
+				border-top:2px solid $main_color;
 				
 				ul {
 					left: -999em;
@@ -104,7 +107,8 @@
 				li:hover > ul,
 				li.focus > ul {
 					left: 100%;
-					top:0;
+					top:-2px;
+					border-top-color: $secondary_color;
 				}
 				
 				li {
@@ -136,6 +140,17 @@
 		}
 	}
 }
+
+.main-navigation ul li > a::after {
+    content: ' ▾';
+}
+
+.main-navigation ul li > a:only-child::after {
+    content: '';
+}
+
+
+
 
 .comment-navigation,
 .posts-navigation,

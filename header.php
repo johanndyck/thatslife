@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<link href='http://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,300i,700,700i' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,300i,700,700i' rel='stylesheet' type='text/css'>
 
 <?php wp_head(); ?>
 </head>
@@ -28,26 +28,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 	
-		<a href="#" id="search_button"><i class="icon-search">Search</i></a>
-		<form action="#" method="get" id="search_form">
-			<label for="s">
-				<input type="search" name="s" id="s" placeholder="search" maxlength="200" />
-			</label>
-			<button type="submit" title="Search this website now"><i class="icon-search"></i></button>
-		</form>
-	
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="icon-menu"></i><?php esc_html_e( 'Menu', 'jdlife' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		<!--
-		<ul id="social_nav">
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Google+</a></li>
-			<li><a href="#">Pintrest</a></li>
-		</ul>
-		-->
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>

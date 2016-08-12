@@ -305,7 +305,7 @@ h6 {
   text-align: center; }
 
 .site-title {
-  font-family: 'Great Vibes', Helvetica, sans-serif;
+  font-family: 'Dancing Script', 'Lato', Helvetica, sans-serif;
   font-size: 4em;
   line-height: 1em;
   margin: 1.5rem 0 0;
@@ -318,7 +318,6 @@ h6 {
 
 .site-description {
   text-transform: uppercase;
-  font-family: Roboto, sans-serif;
   margin: 0 0 2.5rem;
   padding: 0;
   letter-spacing: .1em;
@@ -729,7 +728,9 @@ a {
     text-align: center;
     background-color: #ffffff;
     border-bottom: 1px solid lightgray;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+    z-index: 99999;
+    position: relative; }
     .main-navigation ul {
       display: block; }
       .main-navigation ul ul {
@@ -737,7 +738,8 @@ a {
         padding-left: 0;
         left: -999em;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        display: block; }
+        display: block;
+        border-top: 2px solid green; }
         .main-navigation ul ul ul {
           left: -999em;
           position: absolute;
@@ -746,7 +748,8 @@ a {
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%;
-          top: 0; }
+          top: -2px;
+          border-top-color: lightgray; }
         .main-navigation ul ul li a {
           display: block;
           width: 15em; }
@@ -762,6 +765,12 @@ a {
       .main-navigation ul li:hover > ul,
       .main-navigation ul li.focus > ul {
         left: auto; } }
+
+.main-navigation ul li > a::after {
+  content: ' ▾'; }
+
+.main-navigation ul li > a:only-child::after {
+  content: ''; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
