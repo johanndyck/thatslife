@@ -1,6 +1,14 @@
 #pre-site-footer {
 	border-top:2px solid $main_color;
-	padding: 2em 0 2em;
+	padding: 0 0 2em;
+	text-align: center;
+}
+
+#pre-site-footer a {
+	display:inline-block;
+	background: $main_color;
+	color:#fff;
+	padding:0.5rem;
 }
 
 .site-footer::after {
@@ -11,8 +19,12 @@
 	
 }
 
-#footer-widgets .widget {
-	float:left;
-	width:33%;
-	padding:0 15px 0;
+@media screen and (min-width: 600px) {
+
+	#footer-widgets .widget {
+		float:left;
+		width:33%;
+		padding:0 15px 0;
+	}
+
 }
