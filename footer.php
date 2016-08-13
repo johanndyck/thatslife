@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<div id="pre-site-footer">
-		<a href="#">Return to the top of the page</a>
+		<a href="#page">Return to the top of the page</a>
 	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
