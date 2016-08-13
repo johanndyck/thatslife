@@ -307,9 +307,9 @@ h6 {
 .site-title {
   font-family: 'Dancing Script', 'Lato', Helvetica, sans-serif;
   font-size: 4em;
-  line-height: 1em;
-  margin: 1.5rem 0 0;
-  padding: 3rem 0 0;
+  line-height: 3.5rem;
+  margin: 1rem 0 0;
+  padding: 2rem 0 1rem;
   font-weight: 400; }
 
 .site-title a, .site-title a:visited {
@@ -318,7 +318,7 @@ h6 {
 
 .site-description {
   text-transform: uppercase;
-  margin: 0 0 2.5rem;
+  margin: 0 0 2rem;
   padding: 0;
   letter-spacing: .1em;
   color: green; }
